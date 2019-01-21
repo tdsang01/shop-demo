@@ -1,0 +1,10 @@
+{
+  "TECHNICAL_EXCEPTION": "Oops! Something went wrong, please try again.",
+  "USER_NOT_FOUND": "Sorry, the user is not found",
+  "NOT_FOUND_MIME_FILE": "Sorry, The file is not found mime.",
+  "INVALID_PARAMS": "The params is invalid.",
+  "AUTHENTICATION_FAILED": "Authentication failed. Please try again.",
+  "USER_INCORRECT": "Username or password incorrect.",
+  "PASSWORD_INCORRECT": "Password incorrect.",
+  "ACTION_FAILED": "Action failed, please try again."
+}
