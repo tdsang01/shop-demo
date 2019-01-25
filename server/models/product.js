@@ -2,13 +2,19 @@
 
 import Mongoose from './init-mongoose';
 import modelClass from './classes/product';
-// import plugin from './plugins/product-plugin';
+import plugin from './plugins/product-plugin';
 
 const schema = new Mongoose.Schema(
     {
+        category: {
+            type: Mongoose.Schema.ObjectId,
+            ref: 'Category',
+            required: true
+        },
         name: {
             type: String,
-            required: true
+            required: true,
+            maxlength: 255
         },
         price: {
             type: Number,
@@ -36,5 +42,5 @@ const schema = new Mongoose.Schema(
 );
 
 schema.loadClass(modelClass);
-// schema.plugin(plugin);
+schema.plugin(plugin);
 module.exports = Mongoose.model('Product', schema);

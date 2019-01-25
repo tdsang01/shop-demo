@@ -4,6 +4,7 @@ import Mongoose from './init-mongoose';
 import Util from 'util';
 import User from './user';
 import Product from './product';
+import Category from './category';
 
 module.exports = {
     connect: async (db) => {
@@ -33,5 +34,6 @@ module.exports = {
         }
     },
     User,
-    Product
+    Product,
+    Category
 };
